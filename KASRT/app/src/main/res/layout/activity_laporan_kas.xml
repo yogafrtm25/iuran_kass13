@@ -1,0 +1,105 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaporanKasActivity"
+    android:background="@color/light_cyan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laporan Kas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bagian Pemasukan -->
+        <TextView
+            android:id="@+id/tvPemasukanTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemasukan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvPemasukan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 0"
+            android:textSize="16sp"
+            android:layout_below="@id/tvPemasukanTitle"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bagian Pengeluaran -->
+        <TextView
+            android:id="@+id/tvPengeluaranTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengeluaran"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvPemasukan"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvPengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 0"
+            android:textSize="16sp"
+            android:layout_below="@id/tvPengeluaranTitle"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnTambahPengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Pengeluaran"
+            android:layout_below="@id/tvPengeluaran"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Informasi lain seperti nama, bukti transfer, dan keterangan -->
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@id/btnTambahPengeluaran"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/ivBuktiTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_below="@id/tvNama"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Bukti Transfer" />
+
+        <TextView
+            android:id="@+id/tvKeterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan: "
+            android:textSize="16sp"
+            android:layout_below="@id/ivBuktiTransfer"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+    </RelativeLayout>
+</ScrollView>
